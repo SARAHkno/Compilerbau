@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="defffa2e-9ed6-4f9b-b976-3620a0cbc6a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Compilerbau/src/BinOpNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Compilerbau/src/FollowPosEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Compilerbau/src/OperandNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Compilerbau/src/UnaryNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/_mylyn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/_mylyn.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/.project" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/Compilerbau.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/Compilerbau.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/src/BinOpNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/src/BinOpNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/src/FollowPosEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/src/FollowPosEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/src/OperandNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/src/OperandNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/src/SyntaxNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/src/SyntaxNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/src/UnaryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/src/UnaryNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/src/Visitable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/src/Visitable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/src/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/src/Visitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compilerbau/src/Visitor1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compilerbau/src/Visitor1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,12 +30,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Compilerbau/src/Visitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="17">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -30,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/Compilerbau/src/UnaryNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding>
                 <element signature="e#319#320#0" expanded="true" />
                 <element signature="e#354#355#0" expanded="true" />
@@ -43,16 +57,16 @@
         <entry file="file://$PROJECT_DIR$/Compilerbau/src/Visitable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Compilerbau/src/Visitor1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -60,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Compilerbau/src/OperandNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="204">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#316#317#0" expanded="true" />
                 <element signature="e#351#352#0" expanded="true" />
@@ -73,7 +87,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Compilerbau/src/BinOpNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="238">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#376#377#0" expanded="true" />
@@ -86,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Compilerbau/src/SyntaxNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="119">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Compilerbau/src/FollowPosEntry.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,12 +139,12 @@
         <option value="$PROJECT_DIR$/Compilerbau/src/IVisitor.java" />
         <option value="$PROJECT_DIR$/Compilerbau/src/Visitable.java" />
         <option value="$PROJECT_DIR$/Compilerbau/src/Visitor.java" />
-        <option value="$PROJECT_DIR$/Compilerbau/src/Visitor1.java" />
         <option value="$PROJECT_DIR$/Compilerbau/src/Syntaxnode.java" />
         <option value="$PROJECT_DIR$/Compilerbau/src/OperandNode.java" />
         <option value="$PROJECT_DIR$/Compilerbau/src/BinOpNode.java" />
         <option value="$PROJECT_DIR$/Compilerbau/src/UnaryNode.java" />
         <option value="$PROJECT_DIR$/Compilerbau/src/FollowPosEntry.java" />
+        <option value="$PROJECT_DIR$/Compilerbau/src/Visitor1.java" />
       </list>
     </option>
   </component>
@@ -168,6 +182,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548338212175" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -198,16 +213,13 @@
     <frame x="68" y="20" width="1400" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -215,28 +227,24 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Compilerbau/src/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Compilerbau/src/UnaryNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
           <folding>
             <element signature="e#319#320#0" expanded="true" />
             <element signature="e#354#355#0" expanded="true" />
@@ -244,24 +252,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Compilerbau/src/Visitable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Compilerbau/src/Visitor1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Compilerbau/src/OperandNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="204">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#316#317#0" expanded="true" />
             <element signature="e#351#352#0" expanded="true" />
@@ -271,7 +265,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Compilerbau/src/BinOpNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="238">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#376#377#0" expanded="true" />
@@ -282,8 +276,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Compilerbau/src/SyntaxNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="119">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -293,10 +287,31 @@
     <entry file="file://$PROJECT_DIR$/Compilerbau/src/FollowPosEntry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Compilerbau/src/Visitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Compilerbau/src/Visitable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Compilerbau/src/Visitor1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
         </state>
       </provider>
     </entry>
