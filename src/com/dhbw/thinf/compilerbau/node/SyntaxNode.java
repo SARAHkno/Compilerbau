@@ -1,5 +1,7 @@
 package com.dhbw.thinf.compilerbau.node;
 
+import com.dhbw.thinf.compilerbau.visitor.IVisitor;
+
 import java.util.HashSet;
 import java.util.Set;
 
