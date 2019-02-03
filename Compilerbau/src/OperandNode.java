@@ -12,4 +12,16 @@ public class OperandNode extends SyntaxNode implements Visitable
     {
         visitor.visit(this);
     }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public String getSymbol() {
+        return symbol;
+    }
 }
