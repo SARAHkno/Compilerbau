@@ -4,7 +4,7 @@ interface Visitable
 {
     void accept(Visitor visitor);
     boolean getNullable ();
-    <Intager> HashSet getFirstpos();
-    <Intager> HashSet getLastpos();
+    HashSet<Integer> getFirstpos();
+    HashSet<Integer> getLastpos();
 
 }
