@@ -5,11 +5,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class TopDownParser {
+public class TopDownParser implements ITopDownParser {
     private IVisitable tree;
-
-    public TopDownParser() {
-    }
 
     private String readRegEx() throws IOException {
         try (BufferedReader bufferedReader = new BufferedReader(
@@ -18,6 +15,7 @@ public class TopDownParser {
         }
     }
 
+    @Override
     public void parse() throws IOException {
         String inputLine = readRegEx();
 
