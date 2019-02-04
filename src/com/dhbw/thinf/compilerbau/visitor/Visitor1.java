@@ -16,17 +16,16 @@ public class Visitor1 implements IVisitor{
         positioncounter ++;
 
         //nullable
-        if (node.getSymbol().equals("epsilon")){
+        if (node.getSymbol().equals("Ɛ")) {
             node.setNullable(true);
-        }
-        else {
+        } else {
             node.setNullable(false);
         }
 
         //firstpos and lastpos
         if (!node.getNullable()){
-            node.addFirstpos((Integer) node.getPosition());
-            node.addLastpos((Integer) node.getPosition());
+            node.addFirstpos(node.getPosition());
+            node.addLastpos(node.getPosition());
         }
 
     }
@@ -103,16 +102,16 @@ public class Visitor1 implements IVisitor{
             node.setNullable(true);
         }
         else {
-            node.setNullable(node.getLeft().getNullable());
+            node.setNullable(node.getSubNode().getNullable());
         }
 
         //firstpos
-        for (int firstposleft: node.getLeft().getFirstpos()) {
+        for (int firstposleft: node.getSubNode().getFirstpos()) {
             node.addFirstpos(firstposleft);
         }
 
         //lastpos
-        for (int lastposright: node.getRight().getLastpos()) {
+        for (int lastposright: node.getSubNode().getLastpos()) {
             node.addFirstpos(lastposright);
         }
     }
