@@ -19,4 +19,8 @@ public class UnaryOpNode extends SyntaxNode{
     {
         visitor.visit(this);
     }
+
+    public IVisitable getSubNode() {
+        return subNode;
+    }
 }
