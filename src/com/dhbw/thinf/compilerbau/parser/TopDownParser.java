@@ -24,9 +24,9 @@ public class TopDownParser implements ITopDownParser {
     @Override
     public void parse() throws IOException {
         String inputLine = readRegEx();
-        if (inputLine.length() == 1 && inputLine.equals("#")) {
+        if (inputLine.equals("#")) {
             start();
-        } else if (inputLine.indexOf("(") == 0) {
+        } else if (inputLine.matches("(" + ".*" + ")#")) {
             //do something
         } else {
             throw new Error("Syntax Error!");
