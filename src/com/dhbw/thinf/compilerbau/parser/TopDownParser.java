@@ -15,26 +15,31 @@ public class TopDownParser implements ITopDownParser {
 
     private String readRegEx() throws IOException {
         try (BufferedReader bufferedReader = new BufferedReader(
-                new FileReader("res" + System.getProperty("file.separator" + "regEx.txt")))) {
+                new FileReader("res" + System.getProperty("file.separator") + "regEx.txt"))) {
             return bufferedReader.readLine();
         }
     }
 
     //Ka was ich mach
     @Override
-    public void parse() throws Exception {
+    public void parse() throws IOException {
         String inputLine = readRegEx();
-        if (inputLine.contains("#")) {
-            if (inputLine.equals("#")) {
-                tree = new OperandNode("#");
-            } else if (inputLine.lastIndexOf("#") == inputLine.length() - 1) {
-                // do something
-            } else {
-                throw new Exception("Not a valid regular Expression!");
-            }
+        if (inputLine.length() == 1 && inputLine.equals("#")) {
+            start();
+        } else if (inputLine.indexOf("(") == 0) {
+            //do something
         } else {
-            throw new Exception("Not a valid regular Expression!");
+            throw new Error("Syntax Error!");
         }
+    }
 
+    private void start() {
+        tree = new OperandNode("#");
+    }
+
+    //only for debugging
+    public static void main(String[] args) throws IOException {
+        TopDownParser parser = new TopDownParser();
+        parser.parse();
     }
 }
