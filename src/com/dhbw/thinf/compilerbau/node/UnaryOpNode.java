@@ -11,6 +11,10 @@ public class UnaryOpNode extends SyntaxNode{
         this.subNode = subNode;
     }
 
+    public String getOperator() {
+        return operator;
+    }
+
     public void accept(IVisitor visitor)
     {
         visitor.visit(this);
