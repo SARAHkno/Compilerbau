@@ -1,7 +1,5 @@
 package com.dhbw.thinf.compilerbau.node;
 
-import com.dhbw.thinf.compilerbau.visitor.IVisitor;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,8 +8,31 @@ public abstract class SyntaxNode implements IVisitable {
     protected final Set<Integer> firstpos = new HashSet<>();
     protected final Set<Integer> lastpos  = new HashSet<>();
 
-    @Override
-    public void accept(IVisitor visitor) {
-        visitor.visit(this);
+    public void setNullable(boolean b){
+        nullable = b;
+    }
+
+    public void setNullable(Boolean nullable) {
+        this.nullable = nullable;
+    }
+
+    public void addFirstpos (Integer newFirstpos){
+        firstpos.add(newFirstpos);
+    }
+
+    public void addLastpos (Integer newLastpos){
+        lastpos.add(newLastpos);
+    }
+
+    public boolean getNullable() {
+        return nullable;
+    }
+
+    public Set<Integer> getFirstpos() {
+        return firstpos;
+    }
+
+    public Set<Integer> getLastpos() {
+        return lastpos;
     }
 }
