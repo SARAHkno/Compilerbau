@@ -21,7 +21,6 @@ public class Visitor1 implements IVisitor{
         } else {
             node.setNullable(false);
         }
-
         //firstpos and lastpos
         if (!node.getNullable()){
             node.addFirstpos(node.getPosition());
@@ -29,6 +28,7 @@ public class Visitor1 implements IVisitor{
         }
 
     }
+
 
     @Override
     public void visit(BinOpNode node) {
