@@ -5,9 +5,9 @@ import java.util.Set;
 
 class FollowposTableEntry {
 
-    private final int position;
-    private final String symbol;
-    private final Set<Integer> followPos;
+    public final int position;
+    public final String symbol;
+    public final Set<Integer> followPos;
 
     public FollowposTableEntry(int position, String symbol){
         this.position = position;

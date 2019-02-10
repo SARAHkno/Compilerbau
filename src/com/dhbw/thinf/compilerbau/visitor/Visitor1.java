@@ -55,10 +55,10 @@ public class Visitor1 implements IVisitor{
             }
             //lastpos
             for (int lastposleft: node.getLeft().getLastpos()) {
-                node.addFirstpos(lastposleft);
+                node.addLastpos(lastposleft);
             }
             for (int lastposright: node.getRight().getLastpos()) {
-                node.addFirstpos(lastposright);
+                node.addLastpos(lastposright);
             }
         }
 
