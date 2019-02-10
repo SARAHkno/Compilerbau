@@ -6,15 +6,13 @@ import com.dhbw.thinf.compilerbau.node.UnaryOpNode;
 
 public class Visitor1 implements IVisitor{
 
-    private int positioncounter = 1;
+    private int positionCounter = 1;
 
     @Override
     public void visit(OperandNode node) {
-
         //position
-        node.setPosition(positioncounter);
-        positioncounter ++;
-
+        node.setPosition(positionCounter);
+        positionCounter++;
         //nullable
         if (node.getSymbol().equals("Ɛ")) {
             node.setNullable(true);
@@ -26,9 +24,7 @@ public class Visitor1 implements IVisitor{
             node.addFirstpos(node.getPosition());
             node.addLastpos(node.getPosition());
         }
-
     }
-
 
     @Override
     public void visit(BinOpNode node) {
@@ -41,7 +37,6 @@ public class Visitor1 implements IVisitor{
             else {
                 node.setNullable(false);
             }
-
             //firstpos
             for (int firstposleft: node.getLeft().getFirstpos()) {
                 node.addFirstpos(firstposleft);
@@ -49,7 +44,6 @@ public class Visitor1 implements IVisitor{
             for (int firstposright: node.getRight().getFirstpos()) {
                 node.addFirstpos(firstposright);
             }
-
             //lastpos
             for (int lastposleft: node.getLeft().getLastpos()) {
                 node.addFirstpos(lastposleft);
@@ -68,7 +62,6 @@ public class Visitor1 implements IVisitor{
             else {
                 node.setNullable(false);
             }
-
             //firstpos
             if (node.getLeft().getNullable()){
                 //add firstpos right
@@ -80,7 +73,6 @@ public class Visitor1 implements IVisitor{
             for (int firstposleft: node.getLeft().getFirstpos()) {
                 node.addFirstpos(firstposleft);
             }
-
             //lastpos
             if (node.getRight().getNullable()){
                 //add lastpos left
@@ -104,12 +96,10 @@ public class Visitor1 implements IVisitor{
         else {
             node.setNullable(node.getSubNode().getNullable());
         }
-
         //firstpos
         for (int firstposleft: node.getSubNode().getFirstpos()) {
             node.addFirstpos(firstposleft);
         }
-
         //lastpos
         for (int lastposright: node.getSubNode().getLastpos()) {
             node.addFirstpos(lastposright);
