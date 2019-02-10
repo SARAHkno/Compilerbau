@@ -28,7 +28,7 @@ class Visitor1Test {
 
     @Test
     void visitBinOpNode() {
-        IVisitor visitor = new Visitor1(binOpNode);
+        IVisitor visitor = new Visitor1();
     }
 
     @Test
