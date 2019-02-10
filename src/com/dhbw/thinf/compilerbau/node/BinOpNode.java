@@ -2,7 +2,7 @@ package com.dhbw.thinf.compilerbau.node;
 
 import com.dhbw.thinf.compilerbau.visitor.IVisitor;
 
-public class BinOpNode extends SyntaxNode {
+public class BinOpNode extends SyntaxNode implements IBinOpNode{
     private String operator;
     private IVisitable left;
     private IVisitable right;
