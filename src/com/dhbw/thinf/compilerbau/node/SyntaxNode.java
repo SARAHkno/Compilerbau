@@ -5,34 +5,36 @@ import java.util.Set;
 
 public abstract class SyntaxNode implements IVisitable {
 
-    protected Boolean nullable;
+    protected boolean nullable;
     protected final Set<Integer> firstpos = new HashSet<>();
     protected final Set<Integer> lastpos  = new HashSet<>();
 
-    public void setNullable(boolean b){
-        nullable = b;
-    }
-
-    public void setNullable(Boolean nullable) {
+    @Override
+    public void setNullable(boolean nullable) {
         this.nullable = nullable;
     }
 
-    public void addFirstpos (Integer newFirstpos){
+    @Override
+    public void addFirstpos (int newFirstpos){
         firstpos.add(newFirstpos);
     }
 
-    public void addLastpos (Integer newLastpos){
+    @Override
+    public void addLastpos (int newLastpos){
         lastpos.add(newLastpos);
     }
 
+    @Override
     public boolean getNullable() {
         return nullable;
     }
 
+    @Override
     public Set<Integer> getFirstpos() {
         return firstpos;
     }
 
+    @Override
     public Set<Integer> getLastpos() {
         return lastpos;
     }

@@ -1,16 +1,15 @@
 package com.dhbw.thinf.compilerbau.visitor;
 
-import com.dhbw.thinf.compilerbau.node.BinOpNode;
-import com.dhbw.thinf.compilerbau.node.OperandNode;
-import com.dhbw.thinf.compilerbau.node.UnaryOpNode;
+import com.dhbw.thinf.compilerbau.node.IBinOpNode;
+import com.dhbw.thinf.compilerbau.node.IOperandNode;
+import com.dhbw.thinf.compilerbau.node.IUnaryOpNode;
 
 public class Visitor1 implements IVisitor{
 
     private int positionCounter = 1;
 
-
     @Override
-    public void visit(OperandNode node) {
+    public void visit(IOperandNode node) {
         //position
         node.setPosition(positionCounter);
         positionCounter++;
@@ -28,7 +27,7 @@ public class Visitor1 implements IVisitor{
     }
 
     @Override
-    public void visit(BinOpNode node) {
+    public void visit(IBinOpNode node) {
         //for or nodes:
         if (node.getOperator().equals("|")) {
             //nullable
@@ -89,7 +88,7 @@ public class Visitor1 implements IVisitor{
     }
 
     @Override
-    public void visit(UnaryOpNode node) {
+    public void visit(IUnaryOpNode node) {
         //nullable
         if (node.getOperator().equals("*") || node.getOperator().equals("?")){
             node.setNullable(true);

@@ -1,11 +1,11 @@
 package com.dhbw.thinf.compilerbau.visitor;
 
-import com.dhbw.thinf.compilerbau.node.BinOpNode;
-import com.dhbw.thinf.compilerbau.node.OperandNode;
-import com.dhbw.thinf.compilerbau.node.UnaryOpNode;
+import com.dhbw.thinf.compilerbau.node.IBinOpNode;
+import com.dhbw.thinf.compilerbau.node.IOperandNode;
+import com.dhbw.thinf.compilerbau.node.IUnaryOpNode;
 
 public interface IVisitor {
-    void visit(OperandNode node);
-    void visit(BinOpNode node);
-    void visit(UnaryOpNode node);
+    void visit(IOperandNode node);
+    void visit(IBinOpNode node);
+    void visit(IUnaryOpNode node);
 }
