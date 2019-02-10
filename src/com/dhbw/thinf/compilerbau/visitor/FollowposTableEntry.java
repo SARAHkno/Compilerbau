@@ -7,7 +7,7 @@ class FollowposTableEntry {
 
     private final int position;
     private final String symbol;
-    public final Set<Integer> followPos;
+    private final Set<Integer> followPos;
 
     public FollowposTableEntry(int position, String symbol){
         this.position = position;

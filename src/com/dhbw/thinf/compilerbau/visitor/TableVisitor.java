@@ -3,7 +3,6 @@ package com.dhbw.thinf.compilerbau.visitor;
 import com.dhbw.thinf.compilerbau.node.BinOpNode;
 import com.dhbw.thinf.compilerbau.node.OperandNode;
 import com.dhbw.thinf.compilerbau.node.UnaryOpNode;
-
 import java.util.SortedMap;
 import java.util.TreeMap;
 
