@@ -8,6 +8,7 @@ public class Visitor1 implements IVisitor{
 
     private int positioncounter = 1;
 
+
     @Override
     public void visit(OperandNode node) {
 

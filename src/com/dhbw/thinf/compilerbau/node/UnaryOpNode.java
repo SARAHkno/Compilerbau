@@ -2,7 +2,7 @@ package com.dhbw.thinf.compilerbau.node;
 
 import com.dhbw.thinf.compilerbau.visitor.IVisitor;
 
-public class UnaryOpNode extends SyntaxNode{
+public class UnaryOpNode extends SyntaxNode implements IUnaryOpNode{
     private String operator;
     private IVisitable subNode;
 

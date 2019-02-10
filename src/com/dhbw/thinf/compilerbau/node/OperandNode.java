@@ -2,7 +2,7 @@ package com.dhbw.thinf.compilerbau.node;
 
 import com.dhbw.thinf.compilerbau.visitor.IVisitor;
 
-public class OperandNode extends SyntaxNode {
+public class OperandNode extends SyntaxNode implements IOperandNode {
     private int position;
     private String symbol;
 
@@ -10,6 +10,7 @@ public class OperandNode extends SyntaxNode {
         position = -1;
         this.symbol = symbol;
     }
+
     @Override
     public void accept(IVisitor visitor)
     {
