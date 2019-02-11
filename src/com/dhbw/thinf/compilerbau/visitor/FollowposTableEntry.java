@@ -5,19 +5,16 @@ import java.util.Set;
 
 class FollowposTableEntry {
 
-    public final int position;
-    public final String symbol;
-    public final Set<Integer> followPos;
+    public  int position;
+    public  String symbol;
+    public  Set<Integer> followPos;
 
     public FollowposTableEntry(int position, String symbol){
         this.position = position;
         this.symbol = symbol;
         this.followPos = new HashSet<>();
     }
-    public void addfollowposTableEntrys(Set<Integer> addfollowPos){
-        for (int fp: addfollowPos
-             ) {
-            followPos.add(fp);
-        }
+    public void addfollowposTableEntrys(Set<Integer> addFollowPos){
+        followPos.addAll(addFollowPos);
     }
 }
