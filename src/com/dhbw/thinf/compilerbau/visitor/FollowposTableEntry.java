@@ -14,4 +14,10 @@ class FollowposTableEntry {
         this.symbol = symbol;
         this.followPos = new HashSet<>();
     }
+    public void addfollowposTableEntrys(Set<Integer> addfollowPos){
+        for (int fp: addfollowPos
+             ) {
+            followPos.add(fp);
+        }
+    }
 }
