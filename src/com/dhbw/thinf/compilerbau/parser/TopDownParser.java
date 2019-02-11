@@ -20,21 +20,13 @@ public class TopDownParser implements ITopDownParser {
         }
     }
 
-    //Ka was ich mach
     @Override
-    public void parse() throws IOException {
-        String inputLine = readRegEx();
-        if (inputLine.equals("#")) {
-            start();
-        } else if (inputLine.matches("(" + ".*" + ")#")) {
-            //do something
-        } else {
-            throw new Error("Syntax Error!");
-        }
+    public IVisitable parse() {
+        return start();
     }
 
-    private void start() {
-        tree = new OperandNode("#");
+    private IVisitable start() {
+        return new OperandNode("#");
     }
 
     //only for debugging
