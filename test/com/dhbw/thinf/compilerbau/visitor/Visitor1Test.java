@@ -2,6 +2,8 @@ package com.dhbw.thinf.compilerbau.visitor;
 
 import com.dhbw.thinf.compilerbau.node.*;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -50,6 +52,20 @@ class Visitor1Test {
         visitor.visit(node1);
         visitor.visit(node2);
         visitor.visit(binOpNode);
+        assertFalse(binOpNode.getNullable());
+    }
+
+    @Test
+    void visitBinOpNodeConcatination() {
+        IVisitable node1 = new OperandNode("a");
+        IVisitable node2 = new OperandNode("{");
+        IVisitor visitor = new Visitor1();
+        visitor.visit(node1);
+        visitor.visit(node2);
+
+        IBinOpNode binOpNode = new BinOpNode("°", node1, node2);
+        visitor.visit(binOpNode);
+
         assertFalse(binOpNode.getNullable());
     }
 
