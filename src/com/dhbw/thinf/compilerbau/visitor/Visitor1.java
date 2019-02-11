@@ -1,37 +1,46 @@
 package com.dhbw.thinf.compilerbau.visitor;
-
 import com.dhbw.thinf.compilerbau.node.*;
 
+//first visitor for position, nullable, firstpos, lastpos
 public class Visitor1 implements IVisitor{
 
+    //counter for position
     private int positionCounter = 1;
 
     @Override
+    //wrapper-method to avoid overloading of visitor method
     public void visit(IVisitable node) {
+        //for operand nodes
         if (node instanceof OperandNode) {
              visitOpNode((OperandNode)node);
         }
+        //for BinOpNodes
         if (node instanceof BinOpNode) {
             visitBinOpNode((BinOpNode) node);
         }
+        //for UnaryOpNodes
         if (node instanceof UnaryOpNode) {
             visitUnaryOpNode((UnaryOpNode) node);
         }
     }
 
     private void visitOpNode(IOperandNode node) {
-        //position
+        //set position
         node.setPosition(positionCounter);
         positionCounter++;
-        //nullable
+
+        //set nullable
         if (node.getSymbol().equals("Ɛ")) {
             node.setNullable(true);
         } else {
             node.setNullable(false);
         }
-        //firstpos and lastpos
+
+        //set firstpos and lastpos
         if (!node.getNullable()){
+            //add firstpos
             node.addFirstpos(node.getPosition());
+            //add lastpos
             node.addLastpos(node.getPosition());
         }
     }
@@ -39,24 +48,31 @@ public class Visitor1 implements IVisitor{
     private void visitBinOpNode(IBinOpNode node) {
         //for or nodes:
         if (node.getOperator().equals("|")) {
-            //nullable
+
+            //set nullable
             if (node.getLeft().getNullable() || node.getRight().getNullable()){
                 node.setNullable(true);
             }
             else {
                 node.setNullable(false);
             }
-            //firstpos
+
+            //set firstpos
+            //add firstpos left
             for (int firstposleft: node.getLeft().getFirstpos()) {
                 node.addFirstpos(firstposleft);
             }
+            //add firstpos right
             for (int firstposright: node.getRight().getFirstpos()) {
                 node.addFirstpos(firstposright);
             }
-            //lastpos
+
+            //set lastpos
+            //add lastpos left
             for (int lastposleft: node.getLeft().getLastpos()) {
                 node.addLastpos(lastposleft);
             }
+            //add lastpos right
             for (int lastposright: node.getRight().getLastpos()) {
                 node.addLastpos(lastposright);
             }
@@ -64,14 +80,16 @@ public class Visitor1 implements IVisitor{
 
         //for concatenation nodes
         if (node.getOperator().equals("°")){
-            //nullable
+
+            //set nullable
             if (node.getLeft().getNullable() && node.getRight().getNullable()){
                 node.setNullable(true);
             }
             else {
                 node.setNullable(false);
             }
-            //firstpos
+
+            //set firstpos
             if (node.getLeft().getNullable()){
                 //add firstpos right
                 for (int firstposright: node.getRight().getFirstpos()) {
