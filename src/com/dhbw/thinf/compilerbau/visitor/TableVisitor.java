@@ -31,7 +31,6 @@ public class TableVisitor implements IVisitor{
             for (Integer lastPos : node.getLeft().getLastpos()) {
                 for(Integer i : node.getRight().getFirstpos()) {
                     followposTableEntry.get(i).addfollowposTableEntrys(node.getRight().getFirstpos());
-
                 }
             }
         }
@@ -39,10 +38,8 @@ public class TableVisitor implements IVisitor{
 
     private void visitUnaryOpNode(IUnaryOpNode node) {
         if (node.getOperator().equals("*") || node.getOperator().equals("+")) {
-            for (Integer i : node.getLastpos()){
-
+            for (Integer i : node.getLastpos()) {
                 followposTableEntry.get(i).addfollowposTableEntrys(node.getFirstpos());
-
             }
         }
     }
