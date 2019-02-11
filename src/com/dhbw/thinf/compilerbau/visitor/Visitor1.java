@@ -63,7 +63,7 @@ public class Visitor1 implements IVisitor{
         }
 
         //for concatenation nodes
-        if (node.getOperator().equals("*")){
+        if (node.getOperator().equals("°")){
             //nullable
             if (node.getLeft().getNullable() && node.getRight().getNullable()){
                 node.setNullable(true);
