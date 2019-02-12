@@ -1,7 +1,6 @@
 package com.dhbw.thinf.compilerbau.visitor;
 
 import com.dhbw.thinf.compilerbau.node.*;
-import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
@@ -30,7 +29,7 @@ public class TableVisitor implements IVisitor{
         if (node.getOperator().equals("°")) {
             for (Integer lastPos : node.getLeft().getLastpos()) {
                 for(Integer i : node.getRight().getFirstpos()) {
-                    followposTableEntry.get(i).addfollowposTableEntrys(node.getRight().getFirstpos());
+                    followposTableEntry.get(i).followPos.addAll(node.getRight().getFirstpos());
                 }
             }
         }
@@ -39,7 +38,7 @@ public class TableVisitor implements IVisitor{
     private void visitUnaryOpNode(IUnaryOpNode node) {
         if (node.getOperator().equals("*") || node.getOperator().equals("+")) {
             for (Integer i : node.getLastpos()) {
-                followposTableEntry.get(i).addfollowposTableEntrys(node.getFirstpos());
+                followposTableEntry.get(i).followPos.addAll(node.getFirstpos());
             }
         }
     }
