@@ -3,7 +3,7 @@ package com.dhbw.thinf.compilerbau.visitor;
 import java.util.HashSet;
 import java.util.Set;
 
-class FollowposTableEntry {
+public class FollowposTableEntry {
 
     public  int position;
     public  String symbol;
