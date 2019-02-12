@@ -1,7 +1,6 @@
 package com.dhbw.thinf.compilerbau.visitor;
 
 import com.dhbw.thinf.compilerbau.node.*;
-import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
