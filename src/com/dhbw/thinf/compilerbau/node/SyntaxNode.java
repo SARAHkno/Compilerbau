@@ -15,13 +15,23 @@ public abstract class SyntaxNode implements IVisitable {
     }
 
     @Override
-    public void addFirstpos (int newFirstpos){
-        firstpos.add(newFirstpos);
+    public void addFirstposSet(Set<Integer> firstpos){
+        this.firstpos.addAll(firstpos);
     }
 
     @Override
-    public void addLastpos (int newLastpos){
-        lastpos.add(newLastpos);
+    public void addLastposSet(Set<Integer> lastpos){
+        this.lastpos.addAll(lastpos);
+    }
+
+    @Override
+    public void addFirstpos(int position) {
+        firstpos.add(position);
+    }
+
+    @Override
+    public void addLastpos(int position) {
+        lastpos.add(position);
     }
 
     @Override

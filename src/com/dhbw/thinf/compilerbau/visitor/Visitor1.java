@@ -58,24 +58,14 @@ public class Visitor1 implements IVisitor{
             }
 
             //set firstpos
-            //add firstpos left
-            for (int firstposleft: node.getLeft().getFirstpos()) {
-                node.addFirstpos(firstposleft);
-            }
-            //add firstpos right
-            for (int firstposright: node.getRight().getFirstpos()) {
-                node.addFirstpos(firstposright);
-            }
+            //add firstpos left and right
+            node.addFirstposSet(node.getLeft().getFirstpos());
+            node.addFirstposSet(node.getRight().getFirstpos());
 
             //set lastpos
-            //add lastpos left
-            for (int lastposleft: node.getLeft().getLastpos()) {
-                node.addLastpos(lastposleft);
-            }
-            //add lastpos right
-            for (int lastposright: node.getRight().getLastpos()) {
-                node.addLastpos(lastposright);
-            }
+            //add lastpos left and right
+            node.addLastposSet(node.getLeft().getLastpos());
+            node.addLastposSet(node.getRight().getLastpos());
         }
 
         //for concatenation nodes
@@ -92,25 +82,17 @@ public class Visitor1 implements IVisitor{
             //set firstpos
             if (node.getLeft().getNullable()){
                 //add firstpos right
-                for (int firstposright: node.getRight().getFirstpos()) {
-                    node.addFirstpos(firstposright);
-                }
+                node.addFirstposSet(node.getRight().getFirstpos());
             }
             //add firstpos left
-            for (int firstposleft: node.getLeft().getFirstpos()) {
-                node.addFirstpos(firstposleft);
-            }
+            node.addFirstposSet(node.getLeft().getFirstpos());
             //lastpos
             if (node.getRight().getNullable()){
                 //add lastpos left
-                for (int lastposleft: node.getLeft().getLastpos()) {
-                    node.addFirstpos(lastposleft);
-                }
+                node.addFirstposSet(node.getLeft().getLastpos());
             }
             //add lastpos right
-            for (int lastposright: node.getRight().getLastpos()) {
-                node.addFirstpos(lastposright);
-            }
+            node.addFirstposSet(node.getRight().getLastpos());
         }
     }
 
@@ -122,13 +104,8 @@ public class Visitor1 implements IVisitor{
         else {
             node.setNullable(node.getSubNode().getNullable());
         }
-        //firstpos
-        for (int firstposleft: node.getSubNode().getFirstpos()) {
-            node.addFirstpos(firstposleft);
-        }
-        //lastpos
-        for (int lastposright: node.getSubNode().getLastpos()) {
-            node.addFirstpos(lastposright);
-        }
+        //firstpos & lastpos
+        node.addFirstposSet(node.getSubNode().getFirstpos());
+        node.addLastposSet(node.getSubNode().getLastpos());
     }
 }

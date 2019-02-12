@@ -11,4 +11,6 @@ public interface IVisitable {
     Set<Integer> getLastpos();
     void addFirstpos(int position);
     void addLastpos(int position);
+    void addFirstposSet(Set<Integer> positions);
+    void addLastposSet(Set<Integer> position);
 }
